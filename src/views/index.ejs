@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/2778f5a905.js" crossorigin="anonymous"></script>
+    <%- include ('partials/head') %>
 </head>
 
 <body>
+    <style>
+        body {
+            font-family: 'Spicy Rice';
+            background: #f12711;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f5af19, #f12711);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+        }
+    </style>
 
-    <%= include partials/navegacion %>
+    <%- include ('partials/navegacion') %>
 
 </body>
 
