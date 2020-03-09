@@ -8,4 +8,18 @@ router.get('/', (req,res)=>{
 router.get('/contact', (req,res)=>{
     res.render('contact', {title:'Contacts'})
 });
+
+router.get('/about', (req,res)=>{
+    res.render('about', {title:'About'})
+});
+
+router.get('/menu', (req,res)=>{
+    res.render('menu', {title:'menu'})
+});
+
+
+
+
+
+
 module.exports= router;

@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     <%- include ('partials/head') %>
+    <!--<link rel="stylesheet" href="../public/css/main.css">-->
 </head>
 
 <body>
-    <style>
-        body {
-            font-family: 'Spicy Rice';
-            background: #f12711;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #f5af19, #f12711);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        }
-    </style>
-
+    
     <%- include ('partials/navegacion') %>
+
+    <div class="container">
+        <header class="row">
+            <div class="col-lg-12 text-center">
+                <img src="/src/public/img/tesla.png" alt="Tesla">
+            </div>
+        </header>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row bg-dark text-white p5 text-center">
+            <div class="col-sm-6">
+                <i class="fab fa-youtube fa-10x"></i>
+            </div>
+            <div class="col-sm-6">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, distinctio?</h3>
+            </div>
+        </div>
+    </div>
+
+    <%- include ('partials/footer') %>
 
 </body>
 
