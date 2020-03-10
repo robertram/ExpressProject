@@ -1,2 +1,18 @@
+img {
+    width: 25%;
+}
 
+footer {
+bottom: 0;
+   position: fixed;
+   width: 100%;
+}
 
+#about{
+    margin: 20px 0px;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(29, 111, 129, 0.9976365546218487) 0%, rgba(3, 178, 204, 1) 50%, rgba(0, 212, 255, 1) 96%);
+}
