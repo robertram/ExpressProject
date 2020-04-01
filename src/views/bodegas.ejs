@@ -71,30 +71,41 @@
                   </div>
                   <div style="margin-top: 5%;">
                   <button class="btn btn-primary" type="submit">Agregar</button>
-                  <button class="btn btn-warning" type="submit">Modificar</button>
-                  <button class="btn btn-danger" type="submit">Eliminar</button>
                 </div>
-
-                  <table class="table" style="margin-top: 10%;">
+                <div style="margin-top: 5%;">
+                <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="campoCodigo">Código Bodega</label>
+                    <input type="text" class="form-control" id="campoCodigo" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="campoNombreCorto">Nombre Corto</label>
+                    <input type="text" class="form-control" id="campoNombreCorto" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <button class="btn btn-info" type="submit"  style="margin-top: 10%;">Aceptar</button>
+                  <button class="btn btn-warning" type="submit"  style="margin-top: 10%;">Modificar</button>
+                <button class="btn btn-danger" type="submit"  style="margin-top: 10%;">Eliminar</button>
+            </div>
+                </div>
+                </div>
+                
+                <table class="table" style="margin-top: 5%;">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">Código Proveedor</th>
-                        <th scope="col">Cedula</th>
-                        <th scope="col">Nombre Proveedor</th>
-                        <th scope="col">Tel Oficina</th>
-                        <th scope="col">Tel Celular</th>
-                        <th scope="col">Tel Fax</th>
-                        <th scope="col">Correo Electrónico</th>
-                        <th scope="col">Contacto</th>
-                        <th scope="col">Tel Contacto</th>
-                        <th scope="col">Direccion</th>
+                        <th scope="col">Código Bodega</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Nombre Corto</th>
+                        <th scope="col">Alias</th>
+                        <th scope="col">Ubicación</th>
+                        <th scope="col">Espacio Bodega</th>
+                        <th scope="col">Unidad de Medida</th>
+                        <th scope="col">Tipo de Bodega</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row"></th>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -152,5 +163,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
+

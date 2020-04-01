@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('partials/headNuevo') %>
+    </head>
+  <body>
+    <%- include ('partials/navegacionNuevo') %>
+      <div class="containerInfo">
+        <main>
+          <div class="container" style="margin-top: 8%;">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-10">
+                <h2 class="text">Tipo Materia Prima</h2>
+                <form class="needs-validation" novalidate>
+                  <div class="form-row" style="margin-top: 5%;">
+                    <div class="col-md-4 mb-3">
+                      <label for="campoCodigo">Código Tipo Materia Prima</label>
+                      <input type="text" class="form-control" id="campoCodigo" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="dropdown" style="margin-top: 10%;">
+                            <button class="btn btn-light dropdown-toggle" style="background-color: #E5D2E5;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Descripción
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#" id="materiaPrima">Sólido</a>
+                              <a class="dropdown-item" href="#" id="materiaPrima">Solido Metal</a>
+                              <a class="dropdown-item" href="#" id="materiaPrima">Líquido</a>
+                              <a class="dropdown-item" href="#" id="materiaPrima">Gas</a>
+                              <a class="dropdown-item" href="#" id="materiaPrima">Químicos</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 5%;">
+                  <button class="btn btn-primary" type="submit">Agregar</button>
+                </div>
+                <div style="margin-top: 5%;">
+                <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="campoCodigo">Código Materia Prima</label>
+                    <input type="text" class="form-control" id="campoCodigo" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="campoNombreCorto">Nombre Corto</label>
+                    <input type="text" class="form-control" id="campoNombreCorto" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <button class="btn btn-info" type="submit"  style="margin-top: 10%;">Aceptar</button>
+                  <button class="btn btn-warning" type="submit"  style="margin-top: 10%;">Modificar</button>
+                <button class="btn btn-danger" type="submit"  style="margin-top: 10%;">Eliminar</button>
+            </div>
+                </div>
+                </div>
+                
+                <table class="table" style="margin-top: 5%;">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">Código Tipo Materia Prima</th>
+                        <th scope="col">Descripción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </form>
+                
+                <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"
+      integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+

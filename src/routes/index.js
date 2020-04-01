@@ -21,6 +21,17 @@ router.get('/proveedores', (req,res)=>{
     res.render('proveedores', {title:'Proveedores'})
 });
 
+router.get('/bodegas', (req,res)=>{
+    res.render('bodegas', {title:'Bodegas'})
+});
+
+router.get('/camiones', (req,res)=>{
+    res.render('camiones', {title:'Camiones'})
+});
+
+router.get('/tipoMateriaPrima', (req,res)=>{
+    res.render('tipoMateriaPrima', {title:'Tipo Materia Prima'})
+});
 
 /*TRAMSA*/
 
