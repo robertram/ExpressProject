@@ -17,6 +17,10 @@ router.get('/menu', (req,res)=>{
     res.render('menu', {title:'menu'})
 });
 
+router.get('/proveedores', (req,res)=>{
+    res.render('proveedores', {title:'Proveedores'})
+});
+
 
 /*TRAMSA*/
 
