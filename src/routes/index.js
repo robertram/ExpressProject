@@ -21,6 +21,17 @@ router.get('/proveedores', (req,res)=>{
     res.render('proveedores', {title:'Proveedores'})
 });
 
+router.get('/parametrosConsecutivos', (req,res)=>{
+    res.render('parametrosConsecutivos', {title:'Parametros Consecutivos'})
+});
+
+router.get('/parametrosGenerales', (req,res)=>{
+    res.render('parametrosGenerales', {title:'Parametros Generales'})
+});
+
+router.get('/puntoDeVenta', (req,res)=>{
+    res.render('puntoDeVenta', {title:'Punto de Venta'})
+});
 
 /*TRAMSA*/
 
