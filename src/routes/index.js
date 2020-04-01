@@ -33,6 +33,22 @@ router.get('/puntoDeVenta', (req,res)=>{
     res.render('puntoDeVenta', {title:'Punto de Venta'})
 });
 
+router.get('/bodegas', (req,res)=>{
+    res.render('bodegas', {title:'Bodegas'})
+});
+
+router.get('/camiones', (req,res)=>{
+    res.render('camiones', {title:'Camiones'})
+});
+
+router.get('/TipoMateriaPrima', (req,res)=>{
+    res.render('TipoMateriaPrima', {title:'Tipo de Materia Prima'})
+});
+
+router.get('/materiaPrima', (req,res)=>{
+    res.render('materiaPrima', {title:'materiaPrima'})
+});
+
 /*TRAMSA*/
 
 
@@ -40,32 +56,6 @@ router.get('/login', (req,res)=>{
     res.render('TRAMSA/login', {title:'Login'})
 });
 
-router.get('/parametrosGenerales', (req,res)=>{
-    res.render('TRAMSA/parametrosGenerales', {title:'Parametros Generales'})
-});
-
-
-router.get('/consecutivos', (req,res)=>{
-    res.render('TRAMSA/consecutivos', {title:'Consecutivos'})
-});
-
-
-router.get('/camiones', (req,res)=>{
-    res.render('TRAMSA/camiones', {title:'Camiones'})
-});
-
-
-router.get('/bodegas', (req,res)=>{
-    res.render('TRAMSA/bodegas', {title:'Bodegas'})
-});
-
-router.get('/tipoMateriaPrima', (req,res)=>{
-    res.render('TRAMSA/tipoMateriaPrima', {title:'Tipo Materia Prima'})
-});
-
-router.get('/materiaPrima', (req,res)=>{
-    res.render('TRAMSA/materiaPrima', {title:'MateriaPrima'})
-});
 
 router.get('/productos', (req,res)=>{
     res.render('TRAMSA/productos', {title:'Productos'})
