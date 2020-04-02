@@ -33,6 +33,10 @@ router.get('/tipoMateriaPrima', (req,res)=>{
     res.render('tipoMateriaPrima', {title:'Tipo Materia Prima'})
 });
 
+router.get('/productos', (req,res)=>{
+    res.render('productos', {title:'Productos'})
+});
+
 /*TRAMSA*/
 
 

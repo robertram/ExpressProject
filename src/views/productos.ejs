@@ -11,39 +11,22 @@
             <div class="row">
               <div class="col"></div>
               <div class="col-10">
-                <h2 class="text">Bodegas</h2>
+                <h2 class="text">Productos</h2>
+                <h4>Maestro</h4>
                 <form class="needs-validation" novalidate>
                   <div class="form-row" style="margin-top: 5%;">
                     <div class="col-md-4 mb-3">
-                      <label for="campoCodigo">Código Bodega</label>
-                      <input type="text" class="form-control" id="campoCodigo" required>
+                      <label for="campoCodigoMaestro">Código Producto</label>
+                      <input type="text" class="form-control" id="campoCodigoMaestro" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="campoNombre">Nombre</label>
-                      <input type="text" class="form-control" id="campoNombre" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="campoNombreCorto">Nombre Corto</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="campoNombreCorto" aria-describedby="inputGroupPrepend" required>
+                        <label for="descripcion">Descripción</label>
+                        <input type="text" class="form-control" id="descripcion" required>
                       </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                      <label for="campoAlias">Alias</label>
-                      <input type="text" class="form-control" id="campoAlias" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="campoUbicacion">Ubicación</label>
-                      <input type="text" class="form-control" id="campoUbicacion" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="campoUbicacion">Espacio de Bodega</label>
-                        <input type="text" class="form-control" id="campoUbicacion" required>
+                      <div class="col-md-4 mb-3">
+                        <label for="puntoReOrden">Punto de Re Orden</label>
+                        <input type="text" class="form-control" id="puntoReOrden" required>
                       </div>
-                  </div>
-                  <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <div class="dropdown" style="margin-top: 10%;">
                             <button class="btn btn-light dropdown-toggle" style="background-color: #E5D2E5;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,18 +39,19 @@
                               <a class="dropdown-item" href="#" id="litros">litros</a>
                             </div>
                         </div>
-                          </div>
-                          <div class="col-md-4 mb-3">
-                            <div class="dropdown" style="margin-top: 10%;">
-                                <button class="btn btn-light dropdown-toggle" style="background-color: #E5D2E5;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Tipo de Bodega
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#" id="materiaPrima">Materia Prima</a>
-                                  <a class="dropdown-item" href="#" id="productoFinal">Producto Final</a>
-                                </div>
-                            </div>
-                              </div>
+                    </div>
+                  </div>
+                  <br>
+                  <h4>Detalles</h4>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="campoCodigoDetalle">Código Producto</label>
+                        <input type="text" class="form-control" id="campoCodigoDetalle" required>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="campoNombreCorto">Código Materia Prima</label>
+                        <input type="text" class="form-control" id="campoNombreCorto" required>
+                      </div>
                   </div>
                   <div style="margin-top: 5%;">
                   <button class="btn btn-primary" type="submit">Agregar</button>
@@ -75,7 +59,7 @@
                 <div style="margin-top: 5%;">
                 <div class="form-row">
                 <div class="col-md-4 mb-3">
-                    <label for="campoCodigo">Código Bodega</label>
+                    <label for="campoCodigo">Código Producto</label>
                     <input type="text" class="form-control" id="campoCodigo" required>
                   </div>
                   <div class="col-md-4 mb-3">
@@ -93,20 +77,18 @@
                 <table class="table" style="margin-top: 5%;">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">Código Bodega</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Nombre Corto</th>
-                        <th scope="col">Alias</th>
-                        <th scope="col">Ubicación</th>
-                        <th scope="col">Espacio Bodega</th>
+                        <th scope="col">Código Producto Maestro</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Punto de Re Orden</th>
                         <th scope="col">Unidad de Medida</th>
-                        <th scope="col">Tipo de Bodega</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Código Producto Detalle</th>
+                        <th scope="col">Código Materia Prima</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th></th>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
