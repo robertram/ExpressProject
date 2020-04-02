@@ -11,56 +11,39 @@
             <div class="row">
               <div class="col"></div>
               <div class="col-10">
-                <h2 class="text">Proveedores</h2>
+                <h2 class="text">Punto de Venta</h2>
                 <form class="needs-validation" novalidate>
                   <div class="form-row" style="margin-top: 5%;">
                     <div class="col-md-4 mb-3">
-                      <label for="validationCustom01">Código Proveedor</label>
-                      <input type="text" class="form-control" id="validationCustom01" required>
+                      <label for="validationCustom01">Fecha</label>
+                      <input type="date" class="form-control" id="validationCustom01" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="validationCustom02">Cédula Identidad o Jurífica</label>
+                      <label for="validationCustom02">Cliente</label>
                       <input type="text" class="form-control" id="validationCustom02" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="validationCustomUsername">Nombre Proveedor</label>
+                        <label for="validationCustom02">Producto</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="validationCustomUsername">Cantidad</label>
                       <div class="input-group">
-                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                       </div>
                     </div>
-                  </div>
-                  <div class="form-row">
                     <div class="col-md-4 mb-3">
-                      <label for="validationCustom03">Teléfono Oficina</label>
-                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <label for="validationCustom03">Descuento</label>
+                      <input type="number" class="form-control" id="validationCustom03" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="validationCustom04">Teléfono Celular</label>
-                      <input type="text" class="form-control" id="validationCustom04" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="validationCustom05">Fax</label>
-                      <input type="text" class="form-control" id="validationCustom05" required>
+                      <label for="validationCustom03">Impuesto</label>
+                      <input type="number" class="form-control" id="validationCustom03" required>
                     </div>
                   </div>
-                  <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                      <label for="validationCustom03">Correo Electrónico</label>
-                      <input type="email" class="form-control" id="validationCustom03" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="validationCustom04">Contacto</label>
-                      <input type="text" class="form-control" id="validationCustom04"  required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="validationCustom05">Teléfono Contacto</label>
-                      <input type="text" class="form-control" id="validationCustom05" required>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <label for="validationCustom05">Dirección</label>
-                      <input type="text" class="form-control" id="validationCustom05" required>
-                    </div>
-                  </div>
+                  <h3 style="text-align: center;" id="totalVenta">Total</h3>
                   <button class="btn btn-primary" type="submit">Agregar</button>
                   <button class="btn btn-warning" type="submit">Modificar</button>
                   <button class="btn btn-danger" type="submit">Eliminar</button>
@@ -69,24 +52,16 @@
                   <table class="table" style="margin-top: 10%;">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">Código Proveedor</th>
-                        <th scope="col">Cedula</th>
-                        <th scope="col">Nombre Proveedor</th>
-                        <th scope="col">Tel Oficina</th>
-                        <th scope="col">Tel Celular</th>
-                        <th scope="col">Tel Fax</th>
-                        <th scope="col">Correo Electrónico</th>
-                        <th scope="col">Contacto</th>
-                        <th scope="col">Tel Contacto</th>
-                        <th scope="col">Direccion</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Descuento</th>
+                        <th scope="col">Impuesto</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>

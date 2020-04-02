@@ -21,6 +21,10 @@ router.get('/proveedores', (req,res)=>{
     res.render('proveedores', {title:'Proveedores'})
 });
 
+router.get('/parametrosConsecutivos', (req,res)=>{
+    res.render('parametrosConsecutivos', {title:'Parametros Consecutivos'})
+});
+
 router.get('/bodegas', (req,res)=>{
     res.render('bodegas', {title:'Bodegas'})
 });
@@ -39,69 +43,47 @@ router.get('/productos', (req,res)=>{
 
 /*TRAMSA*/
 
+router.get('/puntoDeVenta', (req,res)=>{
+    res.render('puntoDeVenta', {title:'Punto de Venta'})
+});
+
+router.get('/productosMaestro', (req,res)=>{
+    res.render('productosMaestro', {title:'Productos Maestro'})
+});
+
+router.get('/parametrosGenerales', (req,res)=>{
+    res.render('parametrosGenerales', {title:'Parametros Generales'})
+});
+
+router.get('/ventas', (req,res)=>{
+    res.render('ventas', {title:'Ventas'})
+});
+
+router.get('/paseDeDinero', (req,res)=>{
+    res.render('paseDeDinero', {title:'Pase de Dinero'})
+});
+
+router.get('/pedidosPendientes', (req,res)=>{
+    res.render('pedidosPendientes', {title:'Pedidos Pendientes'})
+});
+
+router.get('/bitacora', (req,res)=>{
+    res.render('bitacora', {title:'Bitacora'})
+});
+
+router.get('/usuario', (req,res)=>{
+    res.render('usuario', {title:'Usuarios'})
+});
+
+router.get('/eventos', (req,res)=>{
+    res.render('eventos', {title:'Eventos'})
+});
+
+/*TRAMSA*/
+
 
 router.get('/login', (req,res)=>{
     res.render('TRAMSA/login', {title:'Login'})
 });
-
-router.get('/parametrosGenerales', (req,res)=>{
-    res.render('TRAMSA/parametrosGenerales', {title:'Parametros Generales'})
-});
-
-
-router.get('/consecutivos', (req,res)=>{
-    res.render('TRAMSA/consecutivos', {title:'Consecutivos'})
-});
-
-
-router.get('/camiones', (req,res)=>{
-    res.render('TRAMSA/camiones', {title:'Camiones'})
-});
-
-
-router.get('/bodegas', (req,res)=>{
-    res.render('TRAMSA/bodegas', {title:'Bodegas'})
-});
-
-router.get('/tipoMateriaPrima', (req,res)=>{
-    res.render('TRAMSA/tipoMateriaPrima', {title:'Tipo Materia Prima'})
-});
-
-router.get('/materiaPrima', (req,res)=>{
-    res.render('TRAMSA/materiaPrima', {title:'MateriaPrima'})
-});
-
-router.get('/productos', (req,res)=>{
-    res.render('TRAMSA/productos', {title:'Productos'})
-});
-
-router.get('/proveedores', (req,res)=>{
-    res.render('TRAMSA/proveedores', {title:'Proveedores'})
-});
-
-router.get('/clientes', (req,res)=>{
-    res.render('TRAMSA/clientes', {title:'Clientes'})
-});
-
-router.get('/procesos', (req,res)=>{
-    res.render('TRAMSA/procesos', {title:'Procesos'})
-});
-
-router.get('/produccionLote', (req,res)=>{
-    res.render('TRAMSA/produccionLote', {title:'Produccion en Lote'})
-});
-
-router.get('/puntoVenta', (req,res)=>{
-    res.render('TRAMSA/puntoVenta', {title:'Punto de Venta'})
-});
-
-router.get('/cajas', (req,res)=>{
-    res.render('TRAMSA/cajas', {title:'Cajas'})
-}); 
-
-
-
-
-
 
 module.exports= router;
