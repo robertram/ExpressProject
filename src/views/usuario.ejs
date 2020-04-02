@@ -11,28 +11,39 @@
             <div class="row">
               <div class="col"></div>
               <div class="col-10">
-                <h2 class="text">Parametros Consecutivos</h2>
+                <h2 class="text">Usuarios</h2>
                 <form class="needs-validation" novalidate>
                   <div class="form-row" style="margin-top: 5%;">
                     <div class="col-md-4 mb-3">
-                      <label for="TipoConsecutivo">Tipo de Consecutivo</label>
-                      <input type="text" class="form-control" id="TipoConsecutivo" required>
+                      <label for="nombreUsuario">Nombre/label>
+                      <input type="text" class="form-control" id="nombreUsuario" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="PrefijoConsecutivo">Prefijo</label>
-                      <input type="text" class="form-control" id="PrefijoConsecutivo" required>
+                      <label for="usuarioUsuario">Usuario</label>
+                      <input type="number" class="form-control" id="usuarioUsuario" required>
                     </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="passwordUsuario">Contraseña</label>
+                        <input type="number" class="form-control" id="passwordUsuario" required>
+                      </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-4 mb-3">
-                      <label for="DescripcionConsecutivo">Descripcion</label>
+                      <label for="emailUsuario">Email</label>
                       <div class="input-group">
-                        <input type="text" class="form-control" id="DescripcionConsecutivo" aria-describedby="inputGroupPrepend" required>
+                        <input type="email" class="form-control" id="emailUsuario" aria-describedby="inputGroupPrepend" required>
                       </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="ValorConsecutivo">Valor Consecutivo</label>
-                      <input type="text" class="form-control" id="ValorConsecutivo" required>
+                      <label for="rolUsuario">Rol</label>
+                      <input type="text" class="form-control" id="rolUsuario" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="estadoUsuario">Estado</label>
+                      <select class="form-control" id="estadoUsuario" required>
+                        <option value="activoUsuario">Activo</option>
+                        <option value="inactivoUsuario">Inactivo</option>
+                      </select>
                     </div>
                   </div>
                   <button class="btn btn-primary" type="submit">Agregar</button>
@@ -43,15 +54,19 @@
                   <table class="table" style="margin-top: 10%;">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">Tipo de Consecutivo</th>
-                        <th scope="col">Prefijo</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Valor Consecutivo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Contraseña</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Estado</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row"></th>
+                        <td></td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>

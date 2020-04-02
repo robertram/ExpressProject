@@ -53,6 +53,26 @@ router.get('/ventas', (req,res)=>{
     res.render('ventas', {title:'Ventas'})
 });
 
+router.get('/paseDeDinero', (req,res)=>{
+    res.render('paseDeDinero', {title:'Pase de Dinero'})
+});
+
+router.get('/pedidosPendientes', (req,res)=>{
+    res.render('pedidosPendientes', {title:'Pedidos Pendientes'})
+});
+
+router.get('/bitacora', (req,res)=>{
+    res.render('bitacora', {title:'Bitacora'})
+});
+
+router.get('/usuario', (req,res)=>{
+    res.render('usuario', {title:'Usuarios'})
+});
+
+router.get('/eventos', (req,res)=>{
+    res.render('eventos', {title:'Eventos'})
+});
+
 /*TRAMSA*/
 
 

@@ -11,28 +11,32 @@
             <div class="row">
               <div class="col"></div>
               <div class="col-10">
-                <h2 class="text">Parametros Consecutivos</h2>
+                <h2 class="text">Pedidos Pendientes</h2>
                 <form class="needs-validation" novalidate>
                   <div class="form-row" style="margin-top: 5%;">
                     <div class="col-md-4 mb-3">
-                      <label for="TipoConsecutivo">Tipo de Consecutivo</label>
-                      <input type="text" class="form-control" id="TipoConsecutivo" required>
+                      <label for="numeroPedido">Numero Pedido</label>
+                      <input type="text" class="form-control" id="numeroPedido" required>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="PrefijoConsecutivo">Prefijo</label>
-                      <input type="text" class="form-control" id="PrefijoConsecutivo" required>
+                      <label for="fechaPedido">Fecha</label>
+                      <input type="date" class="form-control" id="fechaPedido" required>
                     </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="proveedorPedido">Proveedor</label>
+                        <input type="text" class="form-control" id="proveedorPedido" required>
+                      </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-4 mb-3">
-                      <label for="DescripcionConsecutivo">Descripcion</label>
+                      <label for="camionPedido">Camion</label>
                       <div class="input-group">
-                        <input type="text" class="form-control" id="DescripcionConsecutivo" aria-describedby="inputGroupPrepend" required>
+                        <input type="text" class="form-control" id="camionPedido" aria-describedby="inputGroupPrepend" required>
                       </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                      <label for="ValorConsecutivo">Valor Consecutivo</label>
-                      <input type="text" class="form-control" id="ValorConsecutivo" required>
+                      <label for="montoPedido">Monto del Pedido</label>
+                      <input type="text" class="form-control" id="montoPedido" required>
                     </div>
                   </div>
                   <button class="btn btn-primary" type="submit">Agregar</button>
@@ -43,15 +47,17 @@
                   <table class="table" style="margin-top: 10%;">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">Tipo de Consecutivo</th>
-                        <th scope="col">Prefijo</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Valor Consecutivo</th>
+                        <th scope="col">Numero de pedido</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Camion</th>
+                        <th scope="col">Monto del Pedido</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row"></th>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
